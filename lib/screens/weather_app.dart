@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:page_transition/page_transition.dart';
 import 'package:weather_app_ui/models/weather_location.dart';
 import 'package:weather_app_ui/widgets/single_weather.dart';
 import 'package:weather_app_ui/widgets/slider_dot.dart';
@@ -100,7 +101,7 @@ class _WeatherAppState extends State<WeatherApp> {
               onPageChanged: _onPageChange,
               itemCount: locationList.length,
               itemBuilder: (ctx, i) => SingleWeather(index: i, ctx: null,)
-            ),
+            ),       
           ],
         ),
       ),
